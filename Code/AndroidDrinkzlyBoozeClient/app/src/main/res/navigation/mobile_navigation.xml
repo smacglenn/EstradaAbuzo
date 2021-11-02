@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_branch">
+
+    <fragment
+        android:id="@+id/nav_branch"
+        android:name="com.example.androiddrinkzlyboozeclient.ui.branch.BranchFragment"
+        android:label="@string/menu_branch"
+        tools:layout="@layout/fragment_branch">
+        <action android:id="@+id/action_nav_branch_to_nav_home"
+            app:destination="@+id/nav_home"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.androiddrinkzlyboozeclient.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="branch"
+            app:argType="string"
+            android:defaultValue="empty"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.example.androiddrinkzlyboozeclient.ui.menu.MenuFragment"
+        android:label="@string/menu_menu"
+        tools:layout="@layout/fragment_menu" />
+
+    <fragment
+        android:id="@+id/nav_food_list"
+        android:name="com.example.androiddrinkzlyboozeclient.ui.foodlist.FoodListFragment"
+        android:label="@string/menu_food_list"
+        tools:layout="@layout/fragment_food_list" />
+    <fragment
+        android:id="@+id/nav_food_detail"
+        android:name="com.example.androiddrinkzlyboozeclient.ui.fooddetail.FoodDetailFragment"
+        android:label="@string/menu_food_detail"
+        tools:layout="@layout/fragment_food_detail" />
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.androiddrinkzlyboozeclient.ui.cart.CartFragment"
+        android:label="menu_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/nav_view_orders"
+        android:name="com.example.androiddrinkzlyboozeclient.ui.view_orders.ViewOrdersFragment"
+        android:label="fragment_view_orders"
+        tools:layout="@layout/fragment_view_orders" />
+
+</navigation>

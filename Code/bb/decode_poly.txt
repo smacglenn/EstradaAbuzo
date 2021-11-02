@@ -1,0 +1,68 @@
+//Java
+public static List<LatLng> decodePoly(String encoded) {
+        List poly = new ArrayList();
+        int index=0,len=encoded.length();
+        int lat=0,lng=0;
+        while(index < len)
+        {
+            int b,shift=0,result=0;
+            do{
+                b=encoded.charAt(index++)-63;
+                result |= (b & 0x1f) << shift;
+                shift+=5;
+
+            }while(b >= 0x20);
+            int dlat = ((result & 1) != 0 ? ~(result >> 1):(result >> 1));
+            lat += dlat;
+
+            shift = 0;
+            result = 0;
+            do{
+                b = encoded.charAt(index++)-63;
+                result |= (b & 0x1f) << shift;
+                shift +=5;
+            }while(b >= 0x20);
+            int dlng = ((result & 1)!=0 ? ~(result >> 1): (result >> 1));
+            lng +=dlng;
+
+            LatLng p = new LatLng((((double)lat / 1E5)),
+                    (((double)lng/1E5)));
+            poly.add(p);
+        }
+        return poly;
+    }
+
+//Kotlin
+fun decodePoly(encoded: String): List<LatLng> {
+        val poly:MutableList<LatLng> = ArrayList<LatLng>()
+        var index=0
+        var len=encoded.length
+        var lat=0
+        var lng=0
+        while(index < len)
+        {
+            var b:Int
+            var shift=0
+            var result = 0
+            do{
+                b = encoded[index++].toInt() - 63
+                result = result or (b and 0x1f shl shift)
+                shift +=5
+
+            }while(b >= 0x20)
+            val dlat = if(result and 1 != 0 ) (result shr 1).inv() else result shr 1
+            lat +=dlat
+            shift = 0
+            result = 0
+            do{
+                b = encoded[index++].toInt() - 63
+                result = result or (b and 0x1f shl shift)
+                shift += 5
+            }while(b>= 0x20)
+            val dlng = if(result and 1 !=0) (result shr 1).inv() else result shr 1
+            lng += dlng
+            val p = LatLng(lat.toDouble() / 1E5,lng.toDouble()/1E5)
+            poly.add(p)
+        }
+        return poly
+    }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#D5633F</item>
+        <item name="colorPrimaryDark">#D5633F</item>
+        <item name="colorAccent">#D5633F</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+    <style name="LoginTheme" parent="FirebaseUI">
+
+        <item name="colorPrimary">#D5633F</item>
+        <item name="colorPrimaryDark">#D5633F</item>
+        <item name="colorAccent">#D5633F</item>
+        <item name="colorButtonNormal">#D5633F</item>
+        <item name="colorControlActivated">@color/black</item>
+        <item name="colorControlHighlight">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/paraa</item>
+        <item name="android:textColorHint">@color/background_color</item>
+
+
+    </style>
+
+</resources>

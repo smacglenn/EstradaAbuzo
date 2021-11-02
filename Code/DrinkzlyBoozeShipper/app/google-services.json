@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "873260057362",
+    "firebase_url": "https://drinkzlybooze-3f8b0-default-rtdb.firebaseio.com",
+    "project_id": "drinkzlybooze-3f8b0",
+    "storage_bucket": "drinkzlybooze-3f8b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873260057362:android:d76e550a22abc68bb569cb",
+        "android_client_info": {
+          "package_name": "com.example.androiddrinkzlyboozeclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873260057362-8nm6d064m7oh9bplt47gelums0o1544p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androiddrinkzlyboozeclient",
+            "certificate_hash": "80e9cc236cac92edac6a9414e4a6b681a0288c1e"
+          }
+        },
+        {
+          "client_id": "873260057362-9jfbg3pvctc6k6lummi9pt9hsp1009uu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRstKIJxwJGmGkKeTcCRAa1OuUBY16kY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873260057362-9jfbg3pvctc6k6lummi9pt9hsp1009uu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873260057362:android:f864317ba33766c9b569cb",
+        "android_client_info": {
+          "package_name": "com.example.drinkzlyboozeserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873260057362-pq1hjcn0vk0v90m7rjig96qabe6004vv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drinkzlyboozeserver",
+            "certificate_hash": "80e9cc236cac92edac6a9414e4a6b681a0288c1e"
+          }
+        },
+        {
+          "client_id": "873260057362-9jfbg3pvctc6k6lummi9pt9hsp1009uu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRstKIJxwJGmGkKeTcCRAa1OuUBY16kY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873260057362-9jfbg3pvctc6k6lummi9pt9hsp1009uu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873260057362:android:3cc1a60bf4da2431b569cb",
+        "android_client_info": {
+          "package_name": "com.example.drinkzlyboozeshipper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873260057362-9jfbg3pvctc6k6lummi9pt9hsp1009uu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRstKIJxwJGmGkKeTcCRAa1OuUBY16kY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873260057362-9jfbg3pvctc6k6lummi9pt9hsp1009uu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
